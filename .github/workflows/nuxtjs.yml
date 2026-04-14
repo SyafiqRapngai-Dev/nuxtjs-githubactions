@@ -77,7 +77,7 @@ jobs:
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
         env:
-          NUXT_APP_BASE_URL: /nuxtjs-github-actions/
+          NUXT_APP_BASE_URL: /nuxtjs-githubactions/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

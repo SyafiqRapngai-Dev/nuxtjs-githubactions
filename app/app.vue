@@ -8,7 +8,7 @@ function onConfirmName() {
 </script>
 
 <template>
-  <div class="flex gap-2 m-4 items-center">
+  <div class="flex gap-2 m-4 items-center background-fill">
     <label for="text">Insert name here</label>
     <input
       class="border-green-300 focus:border-green-700 border outline-0 p-2"
@@ -28,3 +28,9 @@ function onConfirmName() {
     <h1 class="text-4xl">Hello {{ confirmedName }}!</h1>
   </div>
 </template>
+
+<style>
+.background-fill {
+  background-color: navy;
+}
+</style>

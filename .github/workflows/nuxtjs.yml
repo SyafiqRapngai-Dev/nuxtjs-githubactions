@@ -68,7 +68,7 @@ jobs:
         with:
           path: |
             .output/public
-            .nuxt
+            node_modules/.cache/nuxt
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
